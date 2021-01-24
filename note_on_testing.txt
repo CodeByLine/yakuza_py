@@ -1,5 +1,0 @@
-####
-
-Need to use Chrome to test this code without creating a 'User' => first log in the admin area as superuser, then open a new tab.
-
-Does NOT work in Brave.
