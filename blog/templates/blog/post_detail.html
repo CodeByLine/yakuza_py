@@ -1,9 +1,11 @@
 {% extends 'blog/layout.html' %}
+{% load bootstrap %}
+
 {% load static %}
 {% block content %}
-    <a href="{% url 'posts' %}">
+    <!-- <a href="{% url 'posts' %}">
       Post List
-    </a>
+    </a> -->
     <h1>
       {{ post.title }}
     </h1>

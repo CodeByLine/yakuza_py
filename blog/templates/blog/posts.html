@@ -1,15 +1,19 @@
 {% extends 'blog/layout.html' %}
+{% load bootstrap %}
+
 {% load static %}
 {% block content %}
-<h1>My Posts</h1>
-<a href="{% url 'post_create' %}">Create Blog Post</a>
+<div class="container m-5">
+<h1 id="main">My Posts</h1>
+<!-- <a href="{% url 'post_create' %}">Create Blog Post</a> -->
     {% for post in posts %}
-    <a href="{% url 'post_detail' id=post.id %}"> 
+    <a href="{% url 'post_detail' id=post.id %}" style="text-decoration: none;"> 
       <h1>
-        {{ post.title }}<small>(published: {{ post.published_at }})</small>
-      </h1>
-      <p>{{ post.content | linebreaksbr }}</p>
-    </a> 
+        {{ post.title }} </h1> </a> 
+        <small>(Published: {{ post.published_at }})</small>
+     <br>
+       <p>{{ post.content | linebreaksbr }}</p>
+   
     {% endfor %}
-
+  </div>
 {% endblock %}

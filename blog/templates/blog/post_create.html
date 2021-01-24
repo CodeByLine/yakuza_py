@@ -1,14 +1,19 @@
 {% extends 'blog/layout.html' %}
+{% load bootstrap %}
+{% load static %}
 
 {% block content %}
-<h2>templates=>blog=>html</h2>
-    <a href="{% url 'posts' %}">
+<p>templates=>blog=>html</p>
+    <!-- <a href="{% url 'posts' %}">
         Post List
-    </a>
+    </a> -->
+    <div class="container col-lg-6 mt-3">
     <h1>Create Blog post</h1>
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
+        <!-- {{ form.as_p }} -->
+        {{ form|bootstrap_horizontal }}
+        <button class="btn btn-primary mt-2" type="submit">Save</button>
     </form>
+</div>
 {% endblock %}
