@@ -9,3 +9,6 @@ static is not included: Currently, only static file is
     blog=> static => css => main.css
 
 
+###
+Following tutorial:
+https://dev-yakuza.posstree.com/en/django/start/
