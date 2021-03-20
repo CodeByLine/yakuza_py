@@ -1,3 +1,4 @@
+### Following tutorial: https://dev-yakuza.posstree.com/en/django/start/
 ####
 
 Must use Chrome to test this code without creating a 'User' => first log in the admin area as superuser, then open a new tab.
@@ -9,6 +10,4 @@ static is not included: Currently, only static file is
     blog=> static => css => main.css
 
 
-###
-Following tutorial:
-https://dev-yakuza.posstree.com/en/django/start/
+
