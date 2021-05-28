@@ -1,4 +1,4 @@
-#!/Users/yumei/dev/yakuza_py/venv/bin/python3
+#!/Users/yumei/dev/yakuza_py/venv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
